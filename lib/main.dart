@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/page/Edit-Profile.dart';
 import 'package:flutter_ecommerce/page/home/main_page.dart';
 import 'package:flutter_ecommerce/page/sign_page.dart';
 import 'package:flutter_ecommerce/page/sign_up.dart';
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => SplashScreen(),
         '/sign-in': (context) => Sign(),
         '/sign-up': (context) => SignUp(),
-        '/home': (context) => MainPage()
+        '/home': (context) => MainPage(),
+        '/edit-profile': (context) => EditProfile()
       },
     );
   }

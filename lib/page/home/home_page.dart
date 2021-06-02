@@ -50,6 +50,7 @@ class HomePage extends StatelessWidget {
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
+                    fit: BoxFit.cover,
                     image: NetworkImage(
                         "https://wallpaperaccess.com/full/817896.jpg"))),
           )
