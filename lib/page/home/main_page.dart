@@ -25,7 +25,9 @@ class _MainPageState extends State<MainPage> {
 
   Widget cartButton() {
     return FloatingActionButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.pushNamed(context, "/cart");
+      },
       child: Image.asset(
         'assets/icon_cart.png',
         width: 20,
@@ -78,6 +80,7 @@ class _MainPageState extends State<MainPage> {
                 child: Image.asset(
                   'assets/icon_home.png',
                   width: 21,
+                  color: _selectedIndex == 0 ? primaryColor : Color(0xff808191),
                 ),
               ),
               label: '',
@@ -91,6 +94,7 @@ class _MainPageState extends State<MainPage> {
                 child: Image.asset(
                   'assets/icon_chat.png',
                   width: 21,
+                  color: _selectedIndex == 1 ? primaryColor : Color(0xff808191),
                 ),
               ),
               label: '',
@@ -104,6 +108,7 @@ class _MainPageState extends State<MainPage> {
                 child: Image.asset(
                   'assets/icon_wishlist.png',
                   width: 21,
+                  color: _selectedIndex == 2 ? primaryColor : Color(0xff808191),
                 ),
               ),
               label: '',
@@ -117,6 +122,7 @@ class _MainPageState extends State<MainPage> {
                 child: Image.asset(
                   'assets/icon_profile.png',
                   width: 21,
+                  color: _selectedIndex == 3 ? primaryColor : Color(0xff808191),
                 ),
               ),
               label: '',
